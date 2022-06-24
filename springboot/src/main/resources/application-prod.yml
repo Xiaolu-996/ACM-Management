@@ -1,0 +1,9 @@
+file:
+    ip: 42.192.220.227
+server:
+    port: 9090
+spring:
+    datasource:
+        password: ''
+        url: jdbc:mysql://42.192.220.227:3306/springboot-vue?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&useSSL=false&serverTimezone=GMT%2b8
+        username: root

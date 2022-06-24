@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.demo.mapper.UserOrderMapper">
+
+
+    <resultMap id="userOrderMap" type="com.example.demo.entity.Order">
+        <result property="uid" column="uid"/>
+        <result property="id" column="id"/>
+        <result property="name" column="name"/>
+        <result property="broad_knowledge" column="broadKnowledge"/>
+        <result property="subdivision_knowledge" column="subdivisionKnowledge"/>
+        <result property="hard" column="hard"/>
+        <result property="master" column="master"/>
+        <result property="time" column="time"/>
+    </resultMap>
+
+
+    <select id="findPersonOrder" resultMap="userOrderMap">
+        SELECT `user`.id uid, t_order.*, user_order.time
+        FROM t_order
+                 INNER JOIN user_order ON t_order.id = user_order.order_id
+                 INNER JOIN `user` ON `user`.id = user_order.user_id
+    </select>
+
+</mapper>
