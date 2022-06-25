@@ -9,7 +9,7 @@ spring:
         driver-class-name: com.mysql.cj.jdbc.Driver
         password: 990324
         type: com.alibaba.druid.pool.DruidDataSource
-        url: jdbc:mysql://localhost:3309/springboot-vue?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&useSSL=false&serverTimezone=GMT%2b8
+        url: jdbc:mysql://localhost:3309/ACM?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&useSSL=false&serverTimezone=GMT%2b8
         username: root
     servlet:
         multipart:

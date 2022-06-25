@@ -327,7 +327,7 @@ export default {
         },
 
         handleEdit(row) {
-            this.form = JSON.par
+            this.form = JSON.parse(JSON.stringify(row))
             this.dialogVisible = true
             this.$nextTick(() => {
                 if (this.$refs['upload']) {
