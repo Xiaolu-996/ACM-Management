@@ -11,7 +11,7 @@
  Target Server Version : 50738
  File Encoding         : 65001
 
- Date: 24/06/2022 16:29:50
+ Date: 25/06/2022 12:20:43
 */
 
 SET NAMES utf8mb4;
@@ -56,8 +56,8 @@ CREATE TABLE `news` (
 -- Records of news
 -- ----------------------------
 BEGIN;
-INSERT INTO `news` (`id`, `title`, `content`, `author`, `time`) VALUES (6, '带你从0搭建一个Springboot+vue前后端分离项目，真的很简单！', '<p><iframe src=\"//player.bilibili.com/player.html?aid=803885504&amp;bvid=BV14y4y1M7Nc&amp;cid=361690131&amp;page=1\" scrolling=\"no\" border=\"0\" frameborder=\"no\" framespacing=\"0\" allowfullscreen=\"true\" width=\"600\" height=\"400\"> </iframe></p>', '管理员', '2021-09-05 22:28:25');
-INSERT INTO `news` (`id`, `title`, `content`, `author`, `time`) VALUES (10, '1111', '<p>1111</p>', '管理员', '2022-06-17 18:40:36');
+INSERT INTO `news` (`id`, `title`, `content`, `author`, `time`) VALUES (6, '2022-6-第一周刷题计划', '<p>题号 5160-5190</p>', '管理员', '2021-09-05 22:28:25');
+INSERT INTO `news` (`id`, `title`, `content`, `author`, `time`) VALUES (10, '2022-7-第二周刷题计划', '<p>题号 6009-6980</p>', '管理员', '2022-06-17 18:40:36');
 COMMIT;
 
 -- ----------------------------
@@ -1447,13 +1447,11 @@ CREATE TABLE `user` (
 -- Records of user
 -- ----------------------------
 BEGIN;
-INSERT INTO `user` (`id`, `username`, `password`, `nick_name`, `age`, `sex`, `address`, `avatar`) VALUES (1, 'admin', '$2a$10$.cxJ637DYA1PRSzfPmBO0efS1W2eTQefS51b83Nr5xgRNAW0ffgjO', '管理员', 23, '男', '1803', 'http://localhost:9090/files/888f2d39d0724816a738a716d56ad58a');
-INSERT INTO `user` (`id`, `username`, `password`, `nick_name`, `age`, `sex`, `address`, `avatar`) VALUES (13, 'zhang', '$2a$10$h6gfZRMvGFjjQH6HrQf.Q.fvu3jjMc0cv/sGpSanobht5iwCFbucS', '张三', 20, '女', '1802', 'http://localhost:9090/files/ce976aa905b44754bf92b475beecca51');
-INSERT INTO `user` (`id`, `username`, `password`, `nick_name`, `age`, `sex`, `address`, `avatar`) VALUES (14, 'wang', '$2a$10$h6gfZRMvGFjjQH6HrQf.Q.fvu3jjMc0cv/sGpSanobht5iwCFbucS', '王梦晨', 24, '女', '1802', 'http://localhost:9090/files/8c4d09d3120b4888a95fa5500e3c047f');
-INSERT INTO `user` (`id`, `username`, `password`, `nick_name`, `age`, `sex`, `address`, `avatar`) VALUES (15, 'li', '$2a$10$h6gfZRMvGFjjQH6HrQf.Q.fvu3jjMc0cv/sGpSanobht5iwCFbucS', '李雪', 22, '女', '1801', NULL);
+INSERT INTO `user` (`id`, `username`, `password`, `nick_name`, `age`, `sex`, `address`, `avatar`) VALUES (1, 'admin', '$2a$10$.cxJ637DYA1PRSzfPmBO0efS1W2eTQefS51b83Nr5xgRNAW0ffgjO', '管理员', 23, '男', '计科1803', 'http://localhost:9090/files/888f2d39d0724816a738a716d56ad58a');
+INSERT INTO `user` (`id`, `username`, `password`, `nick_name`, `age`, `sex`, `address`, `avatar`) VALUES (13, 'zhang', '$2a$10$h6gfZRMvGFjjQH6HrQf.Q.fvu3jjMc0cv/sGpSanobht5iwCFbucS', '张三', 20, '女', '计科1802', 'http://localhost:9090/files/ce976aa905b44754bf92b475beecca51');
+INSERT INTO `user` (`id`, `username`, `password`, `nick_name`, `age`, `sex`, `address`, `avatar`) VALUES (14, 'wang', '$2a$10$h6gfZRMvGFjjQH6HrQf.Q.fvu3jjMc0cv/sGpSanobht5iwCFbucS', '王梦晨', 24, '女', '软工1802', 'http://localhost:9090/files/8c4d09d3120b4888a95fa5500e3c047f');
+INSERT INTO `user` (`id`, `username`, `password`, `nick_name`, `age`, `sex`, `address`, `avatar`) VALUES (15, 'li', '$2a$10$h6gfZRMvGFjjQH6HrQf.Q.fvu3jjMc0cv/sGpSanobht5iwCFbucS', '李雪', 22, '女', '计科1801', NULL);
 INSERT INTO `user` (`id`, `username`, `password`, `nick_name`, `age`, `sex`, `address`, `avatar`) VALUES (18, 'xiaolian', '$2a$10$B0bD2D6kHx2QysI6FjvLIeV2lRiokZYVmLMwkNPpxtRQg/PejyPbi', '小连', 20, '男', '计科1803', NULL);
-INSERT INTO `user` (`id`, `username`, `password`, `nick_name`, `age`, `sex`, `address`, `avatar`) VALUES (34, 'test1', '$2a$10$zUvGzztQ6DVTwG8kn2Ud1eMT58ECrRHBURTbYIMqoi7AT/0Goao2G', '11', 11, '1', '1', NULL);
-INSERT INTO `user` (`id`, `username`, `password`, `nick_name`, `age`, `sex`, `address`, `avatar`) VALUES (35, 'test2', '$2a$10$aRky6gFTk486XS.QS0hru.ebR71bO3yJVtsixIkgA0zUzW9FVK3lK', '2', 2, '2', '2', NULL);
 COMMIT;
 
 -- ----------------------------
