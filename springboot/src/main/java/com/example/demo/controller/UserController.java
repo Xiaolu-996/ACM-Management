@@ -16,13 +16,11 @@ import com.example.demo.entity.*;
 import com.example.demo.enums.PwdEnum;
 import com.example.demo.enums.RoleEnum;
 import com.example.demo.mapper.*;
-import com.example.demo.utils.TokenUtils;
-import org.apache.poi.ss.formula.functions.T;
+import com.example.demo.utils.TokenUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
-import org.yaml.snakeyaml.events.Event;
 
 import javax.annotation.Resource;
 import javax.servlet.ServletOutputStream;
@@ -87,7 +85,7 @@ public class UserController extends BaseController {
     res.setPermissions(sortedSet);
 
     // 生成token
-    String token = TokenUtils.genToken(res);
+    String token = TokenUtil.genToken(res);
     res.setToken(token);
     return Result.success(res);
   }

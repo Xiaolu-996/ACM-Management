@@ -7,10 +7,10 @@ server:
 spring:
     datasource:
         driver-class-name: com.mysql.cj.jdbc.Driver
-        password: 990324
+        password: ENC(5cK9nqwmdXM63NQHVTG9f2CNUC0vPI0G)
         type: com.alibaba.druid.pool.DruidDataSource
-        url: jdbc:mysql://localhost:3309/ACM?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&useSSL=false&serverTimezone=GMT%2b8
-        username: root
+        url: jdbc:mysql://localhost:3306/ACM?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&useSSL=false&serverTimezone=GMT%2b8
+        username: ENC(bo7mg1TVbW7K+mSjf04lfg==)
     servlet:
         multipart:
             max-file-size: 100MB
@@ -30,4 +30,16 @@ interceptor-config:
         - /error
         - /
         - /csrf
+
+jasypt:
+    encryptor:
+        # 配置加密算法
+        algorithm: PBEWithMD5AndDES
+        iv-generator-classname: org.jasypt.iv.NoIvGenerator
+        property:
+            # 算法识别前缀(当算法发现配置文件中的值以这前缀开始，后缀结尾时，会使用指定算法解密)
+            prefix: ENC(
+            # 算法识别后缀
+            suffix: )
+
 

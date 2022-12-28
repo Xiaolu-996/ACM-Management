@@ -9,7 +9,7 @@ import org.springframework.security.config.annotation.web.configuration.EnableWe
 public class DemoApplication {
 
 	public static void main(String[] args) {
+		System.setProperty("jasypt.encryptor.password", "PEB123@321BEP");
 		SpringApplication.run(DemoApplication.class, args);
 	}
-
 }

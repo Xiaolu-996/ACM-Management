@@ -1,7 +1,6 @@
 package com.example.demo.utils;
 
 import cn.hutool.core.date.DateUtil;
-import cn.hutool.json.JSONUtil;
 import com.auth0.jwt.JWT;
 import com.auth0.jwt.algorithms.Algorithm;
 import com.example.demo.entity.User;
@@ -18,7 +17,7 @@ import java.util.Date;
 
 @Slf4j
 @Component
-public class TokenUtils {
+public class TokenUtil {
 
     @Autowired
     private UserMapper userMapper;
