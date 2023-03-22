@@ -3,15 +3,15 @@
 
  Source Server         : MySQL5.7
  Source Server Type    : MySQL
- Source Server Version : 50738
+ Source Server Version : 50738 (5.7.38)
  Source Host           : localhost:3309
  Source Schema         : ACM
 
  Target Server Type    : MySQL
- Target Server Version : 50738
+ Target Server Version : 50738 (5.7.38)
  File Encoding         : 65001
 
- Date: 25/06/2022 12:20:43
+ Date: 22/03/2023 17:21:36
 */
 
 SET NAMES utf8mb4;
@@ -35,8 +35,6 @@ CREATE TABLE `message` (
 -- Records of message
 -- ----------------------------
 BEGIN;
-INSERT INTO `message` (`id`, `content`, `username`, `time`, `parent_id`, `foreign_id`) VALUES (29, '小连是傻逼', 'zhang', '2022-06-17 17:40:13', NULL, 0);
-INSERT INTO `message` (`id`, `content`, `username`, `time`, `parent_id`, `foreign_id`) VALUES (30, '确实', 'admin', '2022-06-17 17:40:24', 29, 0);
 COMMIT;
 
 -- ----------------------------
@@ -1447,11 +1445,11 @@ CREATE TABLE `user` (
 -- Records of user
 -- ----------------------------
 BEGIN;
-INSERT INTO `user` (`id`, `username`, `password`, `nick_name`, `age`, `sex`, `address`, `avatar`) VALUES (1, 'admin', '$2a$10$.cxJ637DYA1PRSzfPmBO0efS1W2eTQefS51b83Nr5xgRNAW0ffgjO', '管理员', 23, '男', '计科1803', 'http://localhost:9090/files/888f2d39d0724816a738a716d56ad58a');
-INSERT INTO `user` (`id`, `username`, `password`, `nick_name`, `age`, `sex`, `address`, `avatar`) VALUES (13, 'zhang', '$2a$10$h6gfZRMvGFjjQH6HrQf.Q.fvu3jjMc0cv/sGpSanobht5iwCFbucS', '张三', 20, '女', '计科1802', 'http://localhost:9090/files/ce976aa905b44754bf92b475beecca51');
-INSERT INTO `user` (`id`, `username`, `password`, `nick_name`, `age`, `sex`, `address`, `avatar`) VALUES (14, 'wang', '$2a$10$h6gfZRMvGFjjQH6HrQf.Q.fvu3jjMc0cv/sGpSanobht5iwCFbucS', '王梦晨', 24, '女', '软工1802', 'http://localhost:9090/files/8c4d09d3120b4888a95fa5500e3c047f');
-INSERT INTO `user` (`id`, `username`, `password`, `nick_name`, `age`, `sex`, `address`, `avatar`) VALUES (15, 'li', '$2a$10$h6gfZRMvGFjjQH6HrQf.Q.fvu3jjMc0cv/sGpSanobht5iwCFbucS', '李雪', 22, '女', '计科1801', NULL);
-INSERT INTO `user` (`id`, `username`, `password`, `nick_name`, `age`, `sex`, `address`, `avatar`) VALUES (18, 'xiaolian', '$2a$10$B0bD2D6kHx2QysI6FjvLIeV2lRiokZYVmLMwkNPpxtRQg/PejyPbi', '小连', 20, '男', '计科1803', NULL);
+INSERT INTO `user` (`id`, `username`, `password`, `nick_name`, `age`, `sex`, `address`, `avatar`) VALUES (1, 'admin', '$2a$10$.cxJ637DYA1PRSzfPmBO0efS1W2eTQefS51b83Nr5xgRNAW0ffgjO', '管理员', 23, '男', '计科1803', 'https://s2.loli.net/2023/03/22/MT8mWrQqwy7jbuN.jpg');
+INSERT INTO `user` (`id`, `username`, `password`, `nick_name`, `age`, `sex`, `address`, `avatar`) VALUES (13, 'zhang', '$2a$10$h6gfZRMvGFjjQH6HrQf.Q.fvu3jjMc0cv/sGpSanobht5iwCFbucS', '张三', 20, '女', '计科1802', 'https://s2.loli.net/2023/03/22/MT8mWrQqwy7jbuN.jpg');
+INSERT INTO `user` (`id`, `username`, `password`, `nick_name`, `age`, `sex`, `address`, `avatar`) VALUES (14, 'wang', '$2a$10$h6gfZRMvGFjjQH6HrQf.Q.fvu3jjMc0cv/sGpSanobht5iwCFbucS', '王梦晨', 24, '女', '软工1802', 'https://s2.loli.net/2023/03/22/MT8mWrQqwy7jbuN.jpg');
+INSERT INTO `user` (`id`, `username`, `password`, `nick_name`, `age`, `sex`, `address`, `avatar`) VALUES (15, 'li', '$2a$10$h6gfZRMvGFjjQH6HrQf.Q.fvu3jjMc0cv/sGpSanobht5iwCFbucS', '李雪', 22, '女', '计科1801', 'https://s2.loli.net/2023/03/22/MT8mWrQqwy7jbuN.jpg');
+INSERT INTO `user` (`id`, `username`, `password`, `nick_name`, `age`, `sex`, `address`, `avatar`) VALUES (18, 'xiaolian', '$2a$10$B0bD2D6kHx2QysI6FjvLIeV2lRiokZYVmLMwkNPpxtRQg/PejyPbi', '小连', 20, '男', '计科1803', 'https://s2.loli.net/2023/03/22/MT8mWrQqwy7jbuN.jpg');
 COMMIT;
 
 -- ----------------------------
