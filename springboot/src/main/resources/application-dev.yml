@@ -7,10 +7,10 @@ server:
 spring:
     datasource:
         driver-class-name: com.mysql.cj.jdbc.Driver
-        password: ENC(5cK9nqwmdXM63NQHVTG9f2CNUC0vPI0G)
+        username: ENC(o28HrM4RMgw/4ALoOyHTIA==)
+        password: ENC(EH6vQZ34/FflaZhyEEeKJA==)
         type: com.alibaba.druid.pool.DruidDataSource
-        url: jdbc:mysql://localhost:3306/ACM?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&useSSL=false&serverTimezone=GMT%2b8
-        username: ENC(bo7mg1TVbW7K+mSjf04lfg==)
+        url: jdbc:mysql://localhost:3309/ACM?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&useSSL=false&serverTimezone=GMT%2b8
     servlet:
         multipart:
             max-file-size: 100MB

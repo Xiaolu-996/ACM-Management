@@ -8,7 +8,7 @@ class jasyptUtil {
 
 	public static void main(String[] args) {
 		String username = encrypt("root");
-		String password = encrypt("0324Beyourself");
+		String password = encrypt("990324");
 		System.out.println(username);
 		System.out.println(password);
 	}
