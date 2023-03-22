@@ -106,7 +106,7 @@ npm run serve
 
 > 点击详情后出现该成员的刷题情况
 
-![image-20230322172747252](/Users/xiaolu/学习/typoraImages/image-20230322172747252.png)
+![image-20230322172747252](https://s2.loli.net/2023/03/22/SH4EfFNP8nyJzwO.png)
 
 
 
